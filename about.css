@@ -1,0 +1,391 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.TopHeader {
+    background-color: #f8f8f8;
+}
+
+.icons {
+    color: #0d6efd;
+    font-size: 35px;
+}
+
+.Toptext {
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 35px;
+    padding-right: 3px;
+}
+
+.bi {
+    font-size: 25px;
+    color: #0d6efd;
+
+}
+
+.bi:hover {
+    color: #0e3959;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .TopHeader {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .TopHeader {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .TopHeader {
+        display: none;
+    }
+}
+
+
+
+/* first navbar ends Here */
+
+
+
+
+/* second navbar starts here */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0px 0px 8px hsl(220, 68%, 12%, .6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.toggle_menu,
+.close_menu {
+    display: none;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_item {
+    margin: 0 1.5rem;
+    padding: 1.4rem 0;
+}
+
+.nav_link {
+    font-weight: 600;
+    color: #544756;
+}
+
+.nav_link:hover {
+    color: #0d6efd;
+}
+
+.dropdown_link {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown_icon {
+    font-size: 1.3rem;
+}
+
+.megamenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 90px;
+    background-color: #dddd;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 23px 23px -21px rgba(0, 0, 0, 0.25);
+    z-index: -99;
+  
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+.megamenu_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header_megamenu {
+    font-weight: 600;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.menu_icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 0.5rem;
+
+}
+
+.menu_icon i {
+    line-height: 32px;
+    font-size: 28px;
+    color: #0d6efd;
+}
+
+.megamenu_link a {
+    font-weight: 700;
+    color: black;
+}
+
+.megamenu_link a:hover {
+    color: #0d6efd;
+}
+
+.megamenu_link p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #a8a1b5;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.nav_item:hover .dropdown_icon {
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width:992px) {
+    .megamenu {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .megamenu {
+        flex-direction: column;
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        height: 100%;
+        max-width: 350px;
+        overflow: hidden;
+    }
+
+    .dropdown:hover .megamenu {
+        height: 100%;
+    }
+
+    .nav_list {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 100%;
+        max-width: 350px;
+        background-color: #f8f8f8;
+        flex-direction: column;
+        overflow-x: hidden;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .toggle_menu,
+    .close_menu {
+        display: block;
+    }
+
+    .toggle_menu i:hover {
+        color: #0d6efd;
+    }
+
+    .close_menu {
+        margin: 1rem 1rem 1rem auto;
+        background-color: #0d6efd;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+    }
+
+    .close_menu:hover {
+        color: #0d6efd;
+    }
+
+    .close_menu i {
+        line-height: 32px;
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .show_menu {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .megamenu {
+        flex-direction: column;
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        height: 100%;
+        max-width: 350px;
+        overflow: hidden;
+    }
+
+    .dropdown:hover .megamenu {
+        height: 100%;
+    }
+
+    .nav_list {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 100%;
+        max-width: 350px;
+        background-color: #f8f8f8;
+        flex-direction: column;
+        overflow-x: hidden;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .toggle_menu,
+    .close_menu {
+        display: block;
+    }
+
+    .toggle_menu i:hover {
+        color: #0d6efd;
+    }
+
+    .close_menu {
+        margin: 1rem 1rem 1rem auto;
+        background-color: #0d6efd;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+    }
+
+    .close_menu:hover {
+        color: #0d6efd;
+    }
+
+    .close_menu i {
+        line-height: 32px;
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .show_menu {
+        left: 0;
+    }
+}
+
+/* second navbar ends here */
+
+
+
+
+
+.dropdown:hover .dropdown-menu {
+    margin-left: -730px;
+    width: 1162%;
+    margin-top: 20px;
+    display: block;
+    /* Show the dropdown menu on hover */
+    opacity: 1;
+    /* Set the opacity to 1 to make it visible */
+    visibility: visible;
+    /* Set the visibility to visible */
+    transform: translate3d(0, 0, 0);
+    /* Set the transform to avoid visual glitch */
+}
+
+/* Hide the dropdown menu when not hovered */
+.dropdown-menu {
+
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    /* Add a transition effect for smooth appearance */
+}
+
+/* Optionally, you can add styles to format the dropdown menu items */
+.dropdown-menu li {
+    padding: 10px;
+    list-style: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid #fff;
+}
+
+/* Optionally, you can style the dropdown button on hover */
+.dropdown:hover .dropdown-toggle {
+    background-color: #fff;
+    /* Add a background color on hover */
+}
+.servicecolor{
+    color: #544756;
+}
+
+/* second navbar ends here */
+
+/* marque tag style starts here */
+.runningtext{
+    padding: 12px 12px;
+    margin-top: 10px;
+    background: scroll #0d6efd;
+    color: #fff;
+    font-weight: 600;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* marque tool style ends here */
+
+
+/* about section starts here */
+
+/* about section ends here */
